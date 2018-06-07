@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inicio</title>
+</head>
+
+<body [@FadeIn]>
+  <div class="jumbotron container">
+    <h1 class="display-4">{{title}}</h1>
+    <p class="lead">Disfruta de los animales de nuestro zoologico</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg m-1" [routerLink]="['/animals']" role="button">Animales</a>
+    <a class="btn btn-secondary btn-lg m-2" [routerLink]="['/keepers']" role="button">Cuidadores</a>
+    <a class="btn btn-success btn-lg" [routerLink]="['/contact']" role="button">Contacto</a>
+  </div>
+</body>
+
+</html>

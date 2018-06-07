@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--<div class="text-danger container">
+    <h1>{{title}}</h1>
+
+    <nav>
+      <a [routerLink]="['/home']">inicio</a>
+      <a [routerLink]="['/animals']">Animales</a>
+      <a [routerLink]="['/keepers']">Cuidadores</a>
+      <a [routerLink]="['/contact']">Contacto</a>
+    </nav>
+  </div>-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['/home']">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" [routerLink]="['/home']" routerLinkActive="active">
+          <span class="glyphicon glyphicon-home"></span> Inicio
+        </a>
+        <a class="nav-item nav-link" [routerLink]="['/animals']">Animales</a>
+        <a class="nav-item nav-link" [routerLink]="['/keepers']">Cuidadores</a>
+        <a class="nav-item nav-link" [routerLink]="['/tienda']">Tienda</a>
+        <a class="nav-item nav-link" [routerLink]="['/contact']">Contacto</a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+</body>
+
+</html>

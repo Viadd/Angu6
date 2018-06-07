@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h3>{{title}}</h3>
+      <div>
+        <ul class="nav flex-column nav-pills">
+          <li class="nav-item">
+            <a class="nav-link " [routerLink]="['listado']" [routerLinkActive]="['active']">Listado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " [routerLink]="['Añadir']" [routerLinkActive]="['active']">Crear</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " [routerLink]="['Editar']" [routerLinkActive]="['active']">Informacion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
